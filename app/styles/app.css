@@ -4,6 +4,12 @@ body {
 
 }
 
+
+.bg-white{
+
+ background-color: #131313;
+
+
 /******** login and logout **********/
 .fa-sign-out{
   color: #f63;

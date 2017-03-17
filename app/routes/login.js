@@ -1,6 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  activate () {
+     Ember.$('body').addClass('bg-white');
+   },
+   deactivate () {
+     Ember.$('body').removeClass('bg-white');
+   },
+
   actions: {
     login: function() {
       var controller = this.get('controller');
@@ -15,7 +22,7 @@ export default Ember.Route.extend({
         var errorCode = error.code;
         var errorMessage = error.message;
         // [START_EXCLUDE]
-        if (errorCode == 'auth/weak-password') {
+        if (errorCode === 'auth/weak-password') {
           alert('The password is too weak.');
         } else {
           alert(errorMessage);
