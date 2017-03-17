@@ -20,9 +20,9 @@ export default Ember.Component.extend({
     }
 
       else {
-      var n = video.get('rating');
-      n = n+1;
-      video.set('rating', n);
+      var m = video.get('rating');
+      m = m+1;
+      video.set('rating', m);
       }
 
       video.save();
