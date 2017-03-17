@@ -9,9 +9,8 @@
         <li class="list-group-item">Video Description: {{video.videodescription}}
         </li>
         <li class="wordwrap list-group-item">
-          {{#link-to 'video' video.id}}
             <iframe class="video-frame" src= {{video.videourl}} frameborder="0" allowfullscreen></iframe>
-          {{/link-to}}
+          
         </li>
 
 
@@ -20,13 +19,20 @@
           <button class="btn btn-primary" {{action 'thumbupClicked' video}}>
           <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>   {{video.rating}}
        </button></li>
-
         <!-- David's work above -->
+
+        <li class="list-group-item">
+          {{#link-to 'video' video.id}} <button class="btn btn-info">
+          <i class="fa fa-eye" aria-hidden="true"></i>  Video Review
+          </button>
+          {{/link-to}}
+        </li>
+
 
         <li class="list-group-item">
           <button class="btn btn-danger" {{action 'delete' video}}>
     <i class="fa fa-trash-o" aria-hidden="true">
-      </i>  Delete Video</button></li>
+      </i>    Delete Video</button></li>
 
       <!-- Jeff update on Total rating count  -->
       <li class="list-group-item">
