@@ -17,7 +17,7 @@ var user = this.get('store').createRecord('user', {
 id: userData.uid,
 firstName: firstName,
 lastName: lastName,
-emai: email
+email: email
 });
 user.save()
 .then(() =>{
