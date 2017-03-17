@@ -10,7 +10,19 @@ export default Ember.Route.extend({
              provider: 'password',
              email: email,
              password: password
-        }).then(function() {
+        }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/weak-password') {
+          alert('The password is too weak.');
+        } else {
+          alert(errorMessage);
+        }
+        console.log(error);
+        // [END_EXCLUDE]
+      }).then(function() {
             this.transitionTo('index');
         }.bind(this));
     }
