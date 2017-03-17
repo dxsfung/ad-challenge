@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 body {
   background-color: #fff;
+
 }
 
 /******** login and logout **********/
@@ -60,12 +61,25 @@ body {
   margin-bottom: 60px;
 }
 
-.banner-video {}
-
-.banner-heading {}
+.abstract{
+  position: fixed;
+}
 
 
 /*************************/
+
+/****** index-header ********/
+
+.index-divider{
+  background-color: #eee;
+  background: url("assets/videos/abstract.mp4");
+}
+
+.index-divi{
+  height: 350px;
+}
+
+/*****************************/
 
 ul {
   list-style: none;
