@@ -1,4 +1,7 @@
 # ad-challenge
+Deployment on Heroku can be found by below URL:
+https://adchallenge.herokuapp.com/
+
 
 ## Members:
 This project is built by the team comprising of the following members (in alphabetical order):
