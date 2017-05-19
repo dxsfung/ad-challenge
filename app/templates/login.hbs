@@ -1,38 +1,31 @@
-
-	<!--login modal-->
-<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+<!--login modal-->
+<div id="loginModal" class="col-xs-10 modal show" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
-  <div class="modal-content">
+    <div class="modal-content">
       <div class="modal-header">
-          <h2 class="text-center"><img src="/assets/images/login.png" class="img-circle"><br>Login</h2>
+        <h2 class="text-center"><img src="/assets/images/login.png" class="img-circle"><br>Login</h2>
       </div>
+
       <div class="modal-body">
-          <form class="form col-md-12 center-block">
-            <div class="form-group">
-              {{input type="text" value=userEmail placeholder="Email"
+        <form class="form center-block">
+          <div class="form-group">
+            {{input type="text" value=userEmail placeholder="Email"
 				  				class="form-control"}}
-            </div>
-            <div class="form-group">
-              {{input type="password" value=userPassword placeholder="Password" class="form-control"}}
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary" {{action "login"}}> 
+          </div>
+          <div class="form-group">
+            {{input type="password" value=userPassword placeholder="Password" class="form-control"}}
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" {{action "login"}}>
                <span class="login-style">Login </span>
 			  			</button>
-              <span class="pull-right"><strong>Not Registered!</strong>
+            <span class="pull-right"><strong>Not Registered!</strong>
               {{#link-to 'signup'}}
-<span class="signup-style"><strong> Sign Up</strong></span>{{/link-to}}</span>
-            </div>
-          </form>
+              <span class="signup-style"><strong> Sign Up</strong></span>{{/link-to}}
+            </span>
+          </div>
+        </form>
       </div>
-      <div class="modal-footer">
-          <div class="col-md-12">
-          
-    	  </div>	
-      </div>
-  </div>
+    </div>
   </div>
 </div>
-	
-
-
